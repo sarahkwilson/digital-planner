@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>
+        To Do List for <span class="current-date"></span>
+    </h1>
+
+    <div class="container">
+        <form class="todo-form">
+            <input type="text" class="new-task" placeholder="Add a new todo" aria-label="Add new todo">
+            <button type="submit" class="submit-btn">Add Todo</button>
+        </form>
+        <ul class="todo-items" aria-live="polite">
+            <!-- Todos appear here -->
+        </ul>
+    </div>
+
+    <div class="loading-state" hidden>Loading todos...</div>
+    <div class="error-container" hidden aria-live="assertive"></div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
