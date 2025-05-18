@@ -10,7 +10,7 @@ const todayDate = new Date().toLocaleDateString("en-AU", options);
 
 today.innerHTML = todayDate;
 
-const url = "http://localhost:3000/todos";
+const url = "https://digital-planner-backend.vercel.app/todos";
 document.querySelector(".todo-form").addEventListener("submit", async (e) => {
 	e.preventDefault();
 	const text = document.querySelector(".new-task").value;
